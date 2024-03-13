@@ -1,1 +1,1 @@
-console.log("Practice");
+console.log("Practice new");

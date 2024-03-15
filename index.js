@@ -6,6 +6,4 @@ app.get("/", (req, res) => {
   res.send("Run Express");
 });
 
-app.listen(port, () => {
-  console.log("Port running at 3000");
-});
+app.listen(port);

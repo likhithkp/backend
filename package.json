@@ -6,7 +6,7 @@
   "author": "Likhith K.P.",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js",
+    "local": "nodemon index.js",
     "start": "node index.js"
   },
   "dependencies": {

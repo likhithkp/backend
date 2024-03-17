@@ -1,0 +1,32 @@
+# POST http://localhost:3000/post
+# Content-Type: application/json
+# {
+#     "userName" : "dogman",
+#     "name" : "dogman K.P.",
+#     "age":23,
+#     "gender":"male"
+# }
+
+# GET http://localhost:3000/
+
+# GET http://localhost:3000/65f6cf8775f143d406fee66c
+
+PUT http://localhost:3000/update/65f6cefe5ee742bbe5711622
+Content-Type: application/json
+
+{
+    "userName" : "Likhith",
+    "name" : "Likhith K.P.",
+    "age":23,
+    "gender":"male"
+}
+
+# DELETE http://localhost:3000/delete/65f6cf6075f143d406fee66a
+
+//Route Methods
+# GET http://localhost:3000/
+# GET http://localhost:3000/
+# POST http://localhost:3000/
+# PUT http://localhost:3000/
+# PATCH http://localhost:3000/
+# DELETE http://localhost:3000/

@@ -8,6 +8,21 @@ const {
   deleteUser,
 } = require("../controller/userController");
 
+Router.get("/set", (req, res) => {
+  res.cookie("age", 100);
+  res.render("index");
+});
+
+Router.get("/read", (req, res) => {
+  console.log("Cookies>>>>>>>>>", req.cookies.age);
+  res.send("check");
+});
+
+Router.get("/clear", (req, res) => {
+  res.clearCookie("age");
+  res.send("Cookie cleared");
+});
+
 Router.get("/", getUser);
 Router.get("/:id", getUserById);
 Router.post("/post", postUser);

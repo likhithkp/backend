@@ -8,23 +8,22 @@ const {
   deleteUser,
 } = require("../controller/userController");
 
-Router.get("/set", (req, res) => {
-  res.cookie("age", 100);
+Router.get("/", (req, res) => {
   res.render("index");
 });
 
-Router.get("/read", (req, res) => {
-  console.log("Cookies>>>>>>>>>", req.cookies.age);
-  res.send("check");
+Router.get("/login", (req, res) => {
+  req.flash("Name", "Likhith");
+  res.send("Set flash");
 });
 
-Router.get("/clear", (req, res) => {
-  res.clearCookie("age");
-  res.send("Cookie cleared");
+Router.get("/check", (req, res) => {
+  console.log(req.flash("Name"));
+  res.render("index", { Error: req.flash("Name") });
 });
 
-Router.get("/", getUser);
-Router.get("/:id", getUserById);
+Router.get("/get", getUser);
+Router.get("/get/:id", getUserById);
 Router.post("/post", postUser);
 Router.put("/update/:id", updateUser);
 Router.delete("/delete/:id", deleteUser);

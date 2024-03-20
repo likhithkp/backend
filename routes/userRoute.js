@@ -2,7 +2,7 @@ const express = require("express");
 const Router = express.Router();
 const User = require("../models/user");
 const passport = require("passport");
-const localStrategy = require("passport-local");
+const localStrategy = require("passport-local").Strategy;
 passport.use(new localStrategy(User.authenticate()));
 const {
   getUser,

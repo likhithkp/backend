@@ -10,7 +10,7 @@ const {
   postUser,
   updateUser,
   deleteUser,
-} = require("../controller/userController");
+} = require("../controller/rest/userController");
 
 Router.get("/", (req, res) => {
   res.render("index");

@@ -9,7 +9,7 @@ const logger = require("logger");
 const passport = require("passport");
 const localStrategy = require("passport-local");
 const passportLocalMongoose = require("passport-local-mongoose");
-const Router = require("./routes/userRoute");
+const Router = require("./src/routes/userRoute");
 
 //View engine setup
 app.use(express.json());

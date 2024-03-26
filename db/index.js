@@ -1,3 +1,3 @@
-const models = require("./postgres");
+const models = require("./postgreSql");
 
 module.exports = models;
